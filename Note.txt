@@ -4,3 +4,4 @@ https://github.com/Annie-Huang/cssbattle
 https://cssbattle.dev/
 
 ====================================================
+C:\react\cssbattle>npm init -y
