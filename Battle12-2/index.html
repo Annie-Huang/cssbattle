@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport'
+        content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <title>Document</title>
+  <style>
+    body {
+      background: #191919
+    }
+    .a-top {
+      margin: 50px auto;
+      background: red;
+      height: 150px;
+      width: 150px;
+      background: #F2AD43;
+      border-radius: 50%;
+    }
+    .a {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 40%;
+      background: #F2AD43;
+      height: 130px;
+      width: 150px;
+      border-radius: 0 0 20px 20px;
+      overflow: hidden;
+    }
+
+    .circle {
+      left: 50%;
+      transform: translateX(-50%);
+      top: 20px;
+      position: absolute;
+      background: #FFF58F;
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+    }
+
+    .c-bottom-left {
+      position: absolute;
+      left: -100px;
+      bottom: -100px;
+      height: 200px;
+      width: 200px;
+      background: #E08027;
+      border-radius: 50%;
+    }
+
+    .c-bottom-right {
+      position: absolute;
+      right: -100px;
+      bottom: -100px;
+      height: 200px;
+      width: 200px;
+      background: #824B20;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+<!-- In order to see this, you must put one responsive node and set width: 400, height: 300 -->
+<div class='a-top'></div>
+<div class='a'>
+  <div class='circle'></div>
+  <div class='c-bottom-left'></div>
+  <div class='c-bottom-right'></div>
+</div>
+</body>
+</html>
