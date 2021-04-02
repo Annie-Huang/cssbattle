@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport'
+        content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <title>Document</title>
+  <style>
+    html {
+      background: #1A4341;
+      position: relative;
+    }
+    .strips {
+      background: #F3AC3C;
+      width: 40%;
+      height: 20px;
+      margin: 140px auto;
+      box-shadow:
+        0 0 0 20px #1A4341,
+        0 0 0 40px #F3AC3C,
+        0 0 0 60px #1A4341,
+        0 0 0 80px #F3AC3C;
+    }
+    .leftcircle, .rightcircle {
+      position: absolute;
+      top: 50%;
+      left: -150px;
+      transform: translateY(-50%);
+      width: 300px;
+      height: 300px;
+      background: #1A4341;
+      border-radius: 50%;
+      z-index: 1;
+    }
+    .rightcircle {
+      left: auto;
+      right: -150px;
+    }
+  </style>
+</head>
+<body>
+<!-- In order to see this, you must put one responsive node and set width: 400, height: 300 -->
+<div class="strips"></div>
+<div class="leftcircle"></div>
+<div class="rightcircle"></div>
+</body>
+</html>

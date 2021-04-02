@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "lite-server --baseDir=./Battle2-4"
+    "start": "lite-server --baseDir=./Battle8-3"
   },
   "repository": {
     "type": "git",
