@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        background: #e38f66;
+        display: grid;
+        place-content: center;
+      }
+      .outer {
+        background: #aa445f;
+        width: 200px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+
+        display: grid;
+        place-content: center;
+
+        position: relative;
+      }
+      .inner {
+        background: #aa445f;
+        width: 80px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+
+        box-shadow: 0 0 0 30px #f7ec7d;
+      }
+      .inner::before,
+      .inner::after {
+        position: absolute;
+        content: '';
+        width: 100px;
+        aspect-ratio: 1;
+        background: #aa445f;
+      }
+      .inner::before {
+        top: 0;
+        left: 0;
+        border-radius: 99px 0 0 0;
+      }
+      .inner::after {
+        bottom: 0;
+        right: 0;
+        border-radius: 0 0 99px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- In order to see this, you must put one responsive node and set width: 400, height: 300 -->
+    <div class="outer">
+      <div class="inner" />
+    </div>
+  </body>
+</html>
