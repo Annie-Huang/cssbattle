@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        background: #f3ac3c;
+      }
+      div {
+        margin: 135px 175px; /* this is stupid we need to do this rather than using grid or flex box */
+        height: 30px;
+        aspect-ratio: 1;
+        background: #1a4341;
+        transform: rotate(45deg);
+        box-shadow: 0 0 0 35px #f3ac3c, 0 0 0 65px #998235;
+
+        position: relative;
+      }
+      div::before,
+      div::after {
+        position: absolute;
+        content: '';
+        height: 40px;
+        width: 30px;
+        background: #f3ac3c;
+      }
+      div::before {
+        top: -70px;
+      }
+      div::after {
+        left: -65px;
+        top: -5px;
+        transform: rotate(90deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
