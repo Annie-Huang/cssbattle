@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        margin-top: 120px; /* only do this in here to push down the image, don't need to do it in the battle playground */
+
+        background: #191919;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .a {
+        width: 40px;
+        aspect-ratio: 1;
+        position: relative;
+      }
+      .a div {
+        width: 40px;
+        height: 200px;
+        position: absolute;
+        border-radius: 99px;
+      }
+      .b,
+      .c {
+        background: #fe5f55;
+      }
+      .b {
+        top: -200px;
+      }
+      .c {
+        bottom: -200px;
+      }
+      .d,
+      .e {
+        transform: rotate(90deg);
+        top: -80px;
+        background: #a64942;
+      }
+      .d {
+        right: -120px;
+      }
+      .e {
+        left: -120px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="a">
+      <div class="b"></div>
+      <div class="c"></div>
+      <div class="d"></div>
+      <div class="e"></div>
+    </div>
+  </body>
+</html>
