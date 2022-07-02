@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        background: #191919;
+        display: flex;
+        gap: 20px;
+        margin-top: 170px;
+        margin-left: 55px;
+      }
+      .note {
+        height: 40px;
+        width: 50px;
+        border-radius: 50%;
+        background: #fe5f55;
+        position: relative;
+      }
+      .light {
+        background: #a64942;
+      }
+      .up {
+        position: absolute;
+        height: 100px;
+        width: 10px;
+        background: inherit;
+        bottom: 20px;
+        right: 0;
+      }
+      .side,
+      .side-opposite,
+      .side-two {
+        position: absolute;
+        height: 10px;
+        width: 40px;
+        background: inherit;
+        right: -30px;
+        top: -80px;
+      }
+      .side-opposite {
+        right: 0;
+      }
+      .side-two {
+        top: -60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="note">
+      <div class="up"></div>
+      <div class="side"></div>
+    </div>
+    <div class="note">
+      <div class="up"></div>
+      <div class="side-opposite"></div>
+    </div>
+    <div class="note light">
+      <div class="up"></div>
+      <div class="side"></div>
+    </div>
+    <div class="note">
+      <div class="up"></div>
+      <div class="side"></div>
+      <div class="side side-two"></div>
+    </div>
+  </body>
+</html>
