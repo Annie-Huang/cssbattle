@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        background: #f3ac3c;
+        display: grid;
+        align-items: center;
+        padding-left: 37px;
+        height: 100vh; /* Need to add this in */
+      }
+      .guitar {
+        display: flex;
+        align-items: center;
+      }
+      .circle {
+        background: #998235;
+        width: 120px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        position: relative;
+      }
+      .left > * {
+        position: absolute;
+        width: 10px;
+        height: 40px;
+        background: #1a4341;
+        top: 40px;
+        left: 40px;
+        border-radius: 10px;
+      }
+      .right {
+        width: 100px;
+        margin-left: -50px;
+      }
+      .right > * {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background: #1a4341;
+        border-radius: 50%;
+        top: 25px;
+        left: 25px;
+        border: 5px solid #f3ac3c;
+      }
+      .neck {
+        width: 110px;
+        height: 20px;
+        background: #1a4341;
+        margin-left: -2px;
+        position: relative;
+        z-index: -1;
+      }
+      .head {
+        width: 40px;
+        height: 30px;
+        background: #998235;
+        position: absolute;
+        right: -32px;
+        top: -5px;
+        border-radius: 10px;
+        display: grid;
+        place-content: center;
+        gap: 6px;
+      }
+      .head-string {
+        width: 20px;
+        height: 4px;
+        background: #1a4341;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="guitar">
+      <div class="circle left">
+        <div></div>
+      </div>
+      <div class="circle right">
+        <div></div>
+      </div>
+      <div class="neck">
+        <div class="head">
+          <div class="head-string"></div>
+          <div class="head-string"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
