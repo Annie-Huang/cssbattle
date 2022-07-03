@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        background: #998235;
+        display: grid;
+        place-items: center;
+      }
+      .piano {
+        background: #191919;
+        width: 180px;
+        height: 95px;
+        border-radius: 10px;
+        padding-bottom: 5px;
+        position: relative;
+      }
+      .white-keys {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        height: 100%;
+      }
+      .white-keys > * {
+        background: white;
+        width: 20px;
+        height: 70px;
+        border-radius: 5px;
+      }
+      .black-keys {
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+      }
+      .black-keys > * {
+        background: #191919;
+        width: 15px;
+        height: 60px;
+      }
+      .black-keys > *:nth-child(3) {
+        background: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="piano">
+      <div class="white-keys">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="black-keys">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </body>
+</html>
