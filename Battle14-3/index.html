@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        width: 400px; /* only do this in here to push down the image, don't need to do it in the battle playground */
+        height: 300px;
+
+        background: #6592cf;
+        position: relative;
+        margin: 0; /*body got margin*/
+      }
+      .outer {
+        width: 150px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        border: 10px solid #243d83;
+        margin: 75px auto;
+        position: relative;
+        overflow: hidden;
+      }
+      .inner {
+        position: absolute;
+        background: transparent;
+        width: 100px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        border: 10px solid #243d83;
+        top: 115px;
+        left: 15px;
+      }
+      .inner-2 {
+        position: absolute;
+        background: #6592cf;
+        width: 100px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        top: 135px;
+        left: 150px;
+      }
+      .small-circle {
+        position: absolute;
+        width: 10px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background: #243d83;
+        border: 10px solid #6592cf;
+        outline: 10px solid #243d83;
+      }
+      .a {
+        top: -10px;
+        left: 185px;
+      }
+      .b {
+        top: 30px;
+        left: 115px;
+      }
+      .c {
+        top: 30px;
+        right: 115px;
+      }
+      .d {
+        bottom: 40px;
+        left: 115px;
+      }
+      .e {
+        bottom: 40px;
+        right: 115px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="inner"></div>
+    </div>
+    <div class="small-circle a"></div>
+    <div class="small-circle b"></div>
+    <div class="small-circle c"></div>
+    <div class="small-circle d"></div>
+    <div class="small-circle e"></div>
+    <div class="inner-2"></div>
+  </body>
+</html>
