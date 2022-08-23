@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        background: #d25b70;
+        display: grid;
+        place-content: center;
+        margin-top: 90px;
+        height: 100px; /* add this in just for on localhost */
+      }
+      .container {
+        position: relative;
+      }
+      .line {
+        position: absolute;
+        padding-left: 20px;
+
+        width: 100px;
+        height: 10px;
+        border-radius: 100vw;
+        background: transparent; /* change to red to see effect */
+
+        transform-origin: left;
+      }
+      .line::before {
+        position: absolute;
+        content: '';
+        width: 100px;
+        height: 10px;
+        border-radius: 100vw;
+        background: #f2e09f;
+      }
+      .line-2 {
+        transform: rotate(-30deg);
+      }
+      .line-3 {
+        transform: rotate(-60deg);
+      }
+      .line-4 {
+        transform: rotate(-90deg);
+      }
+      .line-5 {
+        transform: rotate(-120deg);
+      }
+      .line-6 {
+        transform: rotate(-150deg);
+      }
+      .line-7 {
+        transform: rotate(-180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="line line-1"></div>
+      <div class="line line-2"></div>
+      <div class="line line-3"></div>
+      <div class="line line-4"></div>
+      <div class="line line-5"></div>
+      <div class="line line-6"></div>
+      <div class="line line-7"></div>
+    </div>
+  </body>
+</html>
