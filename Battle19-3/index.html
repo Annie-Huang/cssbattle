@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        background: #f3ac3c;
+        display: grid;
+        place-content: center;
+        height: 300px; /* add this in just for on localhost */
+      }
+      .container {
+        position: relative;
+        background: red;
+      }
+      .leaf {
+        position: absolute;
+        width: 80px;
+        aspect-ratio: 1;
+        border-radius: 100% 100% 100% 0;
+        background: #254241;
+      }
+      .leaf-1 {
+        top: -110px;
+        left: -40px;
+        transform: rotate(-45deg);
+      }
+      .leaf-2 {
+        bottom: -110px;
+        left: -40px;
+        transform: rotate(135deg);
+      }
+      .leaf-3 {
+        top: -40px;
+        left: -120px;
+        transform: rotate(-135deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="leaf leaf-1"></div>
+      <div class="leaf leaf-2"></div>
+      <div class="leaf leaf-3"></div>
+    </div>
+  </body>
+</html>
