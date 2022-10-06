@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        display: grid;
+        place-content: center;
+        margin-top: 20px; /* add this in just for on localhost */
+      }
+      body > * {
+        grid-column: 1/2;
+        grid-row: 1/2;
+      }
+      .a-container {
+        width: 240px;
+        height: 180px;
+        /*     background: green; */
+        overflow: hidden;
+        position: relative;
+      }
+      .a-container > * {
+        position: absolute;
+        background: #2e2926;
+        width: 40px;
+        height: 250px;
+        top: -25px;
+      }
+      .left {
+        rotate: 25deg;
+        left: 51px;
+      }
+      .right {
+        rotate: -25deg;
+        right: 51px;
+      }
+      .tick-container {
+        width: 200px;
+        height: 180px;
+        /*     background: red; */
+        margin-left: 40px;
+        overflow: hidden;
+
+        position: relative;
+      }
+      .tick-container > * {
+        /*     background: yellow; */
+        position: absolute;
+
+        width: 180px;
+        height: 180px;
+        border: 20px solid #0088ca;
+        rotate: 45deg;
+
+        top: -108px;
+        left: -30px;
+        box-shadow: 0 0 0 8px #ffffff, inset 0 0 0 8px #ffffff;
+      }
+      .circle {
+        width: 21px;
+        height: 21px;
+        background: #0088ca;
+        border-radius: 50%;
+        place-self: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="a-container">
+      <div class="left"></div>
+      <div class="right"></div>
+    </div>
+    <div class="tick-container"><div></div></div>
+    <div class="circle"></div>
+  </body>
+</html>
