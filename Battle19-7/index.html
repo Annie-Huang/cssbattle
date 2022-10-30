@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        background: #c36271;
+        position: relative;
+
+        /* has to add the following for local host*/
+        width: 400px;
+        height: 300px;
+      }
+      .top,
+      .bottom {
+        width: 380px;
+        height: 50%;
+        background: #f2e09f;
+        border-radius: 0 0 100px 0;
+      }
+      .side {
+        width: 50%;
+        height: 50%;
+        background: #f2e09f;
+      }
+      .bottom {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        border-radius: 100px 0 0 0;
+        background: #c36271;
+      }
+      .circle {
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        /*
+        If you want to check out how linear-gradient work, check out this one:
+        background: linear-gradient(#C36271 50%, #F2E09F 50%, #F2E09F 75%, blue 75%, blue 100% );
+        */
+        background: linear-gradient(#c36271 50%, #f2e09f 50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top"></div>
+    <div class="side"></div>
+    <div class="bottom"></div>
+    <div class="circle"></div>
+  </body>
+</html>
