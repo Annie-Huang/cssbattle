@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #e3516e;
+        margin-top: 50px; /* add this in just for on localhost, and adjust the Diemnsions as show in screen print. */
+      }
+      section {
+        width: 200px;
+        height: 100px;
+        background: #e3516e;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        position: relative;
+      }
+      section::before,
+      section::after {
+        position: absolute;
+        content: '';
+        width: 100px;
+        height: 100px;
+        background: #e3516e;
+        transform-origin: top left;
+        transform: translate(-2px, -21px) rotate(45deg);
+      }
+      section::after {
+        transform: translate(202px, -20px) rotate(45deg);
+      }
+      div {
+        width: 90px;
+        height: 40px;
+        background: #d9d9d9;
+        border-radius: 99px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+  </body>
+</html>
