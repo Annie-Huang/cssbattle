@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        display: grid;
+        place-content: center;
+        background: #998235;
+        margin-top: 20px; /* add this in just for on localhost, and adjust the Diemnsions as show in screen print. */
+      }
+      .p,
+      .c {
+        width: 180px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background: #fcbe5c;
+        position: relative;
+        display: grid;
+        place-content: center;
+      }
+      .c {
+        width: 100px;
+      }
+      .p::before,
+      .c::before {
+        position: absolute;
+        content: '';
+        right: 10px;
+        top: 20px;
+        width: 140px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background: #0b2429;
+      }
+      .c::before {
+        width: 60px;
+        background: #998235;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="p">
+      <div class="c"></div>
+    </div>
+  </body>
+</html>
