@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        display: grid;
+        place-items: center;
+        position: relative;
+        background: #f5d6b4;
+      }
+      div {
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+        border-radius: 50%;
+        background: transparent;
+        border: 20px solid transparent;
+        border-top-color: #d86f45;
+        border-right-color: #d86f45;
+        aspect-ratio: 1;
+      }
+      .a,
+      .c {
+        rotate: -45deg;
+      }
+      .b,
+      .d {
+        rotate: 135deg;
+        transform: translate(14px, 14px);
+      }
+      .a {
+        width: 40px;
+      }
+      .b {
+        width: 80px;
+      }
+      .c {
+        width: 120px;
+      }
+      .d {
+        width: 160px;
+      }
+      section {
+        position: absolute;
+        content: '';
+        width: 20px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background: #d86f45;
+        transform: translateX(-30px);
+      }
+      .dot2 {
+        transform: translateX(-110px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="d"></div>
+    <section></section>
+    <section class="dot2"></section>
+  </body>
+</html>
