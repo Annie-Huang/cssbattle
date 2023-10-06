@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        background: #62306d;
+      }
+      div {
+        position: absolute;
+        inset: 50%;
+        width: 200px;
+        aspect-ratio: 1;
+        translate: -50% -50%;
+        border-radius: 100%;
+        background: conic-gradient(#f7ec7d 75%, #e38f66 75%);
+      }
+      .inner {
+        width: 120px;
+        background: #62306d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer"></div>
+    <div class="inner"></div>
+  </body>
+  <!--
+    <style>
+      body {
+        display: grid;
+        place-content: center;
+        background: #62306d;
+      }
+      div {
+        width: 120px;
+        aspect-ratio: 1;
+        border-radius: 100%;
+        border: 40px solid #f7ec7d;
+        border-left-color: #e38f66;
+        rotate: 45deg;
+      }
+    </style>
+    <body>
+      <div></div>
+    </body>
+--></html>
