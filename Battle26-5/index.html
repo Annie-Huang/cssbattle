@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        background: #66284a;
+        margin: 0;
+      }
+      *,
+      *::after {
+        position: absolute;
+        inset: 50%;
+        translate: -50% -50%;
+        aspect-ratio: 1;
+        border-radius: 100%;
+        width: 100px;
+      }
+      div {
+        background: conic-gradient(transparent 25%, var(--color) 25%);
+        transform: translate(0%, 60%);
+      }
+      div::after {
+        content: '';
+        width: 60px;
+        background: #66284a;
+      }
+      .a {
+        --color: #f0cd48;
+        rotate: 180deg;
+      }
+      .c {
+        --color: #d86f45;
+        rotate: 90deg;
+      }
+      .b {
+        --color: #fdfbf8;
+      }
+      .d {
+        --color: #d669ec;
+        rotate: -90deg;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="d"></div>
+  </body>
+</html>
