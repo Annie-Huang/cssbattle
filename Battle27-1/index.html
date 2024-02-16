@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh; /* need to add this for the browser */
+        margin: 0;
+        background: #0d1335;
+        display: grid;
+        place-content: center;
+      }
+      .dot {
+        width: 40px;
+        aspect-ratio: 1;
+        border-radius: 100%;
+        background: #73c6ea;
+      }
+      .oval {
+        position: absolute;
+        width: 230px;
+        height: 90px;
+        left: 50%;
+        top: 50%;
+        translate: -50% -50%;
+        border: 10px solid #fbfae2;
+        border-radius: 50%;
+      }
+      .oval:nth-child(2) {
+        rotate: -60deg;
+        border-color: #4fa07b;
+      }
+      .oval:nth-child(3) {
+        rotate: 60deg;
+        border-color: #dc6638;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dot">
+      <div class="oval"></div>
+      <div class="oval"></div>
+      <div class="oval"></div>
+    </div>
+  </body>
+</html>

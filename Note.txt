@@ -13,7 +13,9 @@ Kevin Powell
 	- I've been challenged to a CSS Battle!
 	- CSS Battle - taking on round 15
 	- Can you beat me at a CSS Battle?
-====================================================
+	- Taking on a CSS Battle Live (https://www.youtube.com/watch?v=6syHgywgGTA)
+
+==================================================================================================
 C:\react\cssbattle>npm init -y
 
 
