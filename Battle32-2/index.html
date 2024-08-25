@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        /* this is for browser only -- start */
+        width: 400px;
+        height: 300px;
+        /* this is for browser only -- end */
+
+        margin: 0;
+        background: #f3ac3c;
+        position: relative;
+      }
+      body > * {
+        position: absolute;
+        top: calc(50% + 4px);
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .circle {
+        width: 166px;
+        aspect-ratio: 1;
+        background: #000000;
+        border: 18px solid #9f3333;
+        border-radius: 100%;
+      }
+      .band {
+        width: 37px;
+        height: 180px;
+        background: #9f3333;
+      }
+      .eye {
+        border: 15px solid #ffffff;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-bottom: 0;
+      }
+      .left {
+        rotate: 27deg;
+        top: calc(50% + 6px);
+        left: calc(50% - 55px);
+      }
+      .right {
+        rotate: -27deg;
+        top: calc(50% - 8px);
+        left: calc(50% + 51px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="circle"></div>
+    <div class="band"></div>
+    <div class="eye left"></div>
+    <div class="eye right"></div>
+  </body>
+</html>
