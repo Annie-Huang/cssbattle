@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        /* this is for browser only -- start */
+        width: 400px;
+        height: 300px;
+        /* this is for browser only -- end */
+
+        background: #f8f8f8;
+        margin: 20px 30px;
+        display: grid;
+        gap: 10px;
+        align-content: start;
+      }
+      .top {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+      }
+      .top > div {
+        background: #787885;
+        height: 50px;
+        flex-grow: 1;
+      }
+      .side > div,
+      .line {
+        background: #787885;
+        height: 10px;
+        width: 100%;
+      }
+      .bottom {
+        display: flex;
+        gap: 10px;
+      }
+      .bottom > div {
+        flex-grow: 1;
+      }
+      .side {
+        display: grid;
+        gap: 10px;
+      }
+      .door {
+        background: #787885;
+        width: 98px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="top">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="line"></div>
+    <div></div>
+    <div class="line"></div>
+    <div class="bottom">
+      <div class="side">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="door"></div>
+      <div class="side">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </body>
+</html>
