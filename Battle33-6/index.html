@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        place-content: center;
+        background: #37212d;
+      }
+      .wrapper {
+        display: flex;
+      }
+      .left,
+      .right {
+        width: 120px;
+        aspect-ratio: 1;
+        position: relative;
+        overflow: hidden;
+      }
+      .left > *,
+      .right > * {
+        position: absolute;
+        border-radius: 100%;
+        aspect-ratio: 1;
+      }
+      .small {
+        width: 120px;
+      }
+      .large {
+        width: 240px;
+      }
+      .left {
+        background: #76608a;
+        .large {
+          background: #ee9b99;
+        }
+        .small {
+          background: #bce6e9;
+          translate: 0 50%;
+        }
+      }
+      .right {
+        background: #ee9b99;
+        .large {
+          background: #bce6e9;
+        }
+        .small {
+          background: #76608a;
+        }
+        > * {
+          translate: -50% 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="left">
+        <div class="large"></div>
+        <div class="small"></div>
+      </div>
+      <div class="right">
+        <div class="large"></div>
+        <div class="small"></div>
+      </div>
+    </div>
+  </body>
+</html>
