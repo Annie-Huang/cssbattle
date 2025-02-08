@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        place-content: center;
+        background: #ffed99;
+      }
+      .wrapper {
+        width: 288px;
+        height: 179px;
+        display: flex;
+        > * {
+          height: 100%;
+        }
+      }
+      .right {
+        width: 180px;
+        background: #3f8627;
+        border-bottom-right-radius: 100%;
+      }
+      .left {
+        width: 110px;
+        > * {
+          width: 100%;
+        }
+      }
+      .bottom {
+        aspect-ratio: 1;
+        background: #9f3333;
+        border-bottom-left-radius: 100%;
+      }
+      .top {
+        height: 68px;
+        display: flex;
+        > * {
+          height: 100%;
+        }
+      }
+      .left-1 {
+        aspect-ratio: 1;
+        border-top-left-radius: 100%;
+        background: #f48b26;
+      }
+      .right-1 {
+        width: 42px;
+      }
+      .top-1 {
+        width: 100%;
+        aspect-ratio: 1;
+        border-top-right-radius: 100%;
+        background: #f48b26;
+      }
+      .bottom-1 {
+        display: flex;
+        > * {
+          height: 26px;
+        }
+      }
+      .left-2 {
+        width: 16px;
+      }
+      .right-2 {
+        aspect-ratio: 1;
+        border-bottom-right-radius: 100%;
+        background: #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="left">
+        <div class="top">
+          <div class="left-1"></div>
+          <div class="right-1">
+            <div class="top-1"></div>
+            <div class="bottom-1">
+              <div class="left-2"></div>
+              <div class="right-2"></div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom"></div>
+      </div>
+      <div class="right"></div>
+    </div>
+  </body>
+</html>
