@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        width: 100vw;
+
+        margin: 0;
+        display: grid;
+        place-content: center;
+        background: #293462;
+      }
+      .circle {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        background: #fff1c1;
+        overflow: hidden;
+
+        position: relative;
+      }
+      .s1 {
+        position: absolute;
+        top: 59px;
+        width: 141px;
+        height: 141px;
+        background: #fe5f55;
+        rotate: -45deg;
+        transform-origin: top right;
+      }
+      .s2 {
+        position: absolute;
+        top: 129px;
+        width: 30px;
+        height: 100px;
+        background: #fe5f55;
+        rotate: -45deg;
+        transform-origin: top right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="circle">
+      <div class="s1"></div>
+      <div class="s2"></div>
+    </div>
+  </body>
+</html>
