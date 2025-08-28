@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        /*height: 300px;*/
+        /*width: 400px;*/
+
+        margin: 20px;
+        background: #fdffe9;
+      }
+      .container {
+        display: grid;
+        gap: 10px;
+      }
+      .center {
+        display: flex;
+        gap: 10px;
+      }
+      .left {
+        width: 80px;
+        height: 180px;
+        background: #adb274;
+      }
+      .right {
+        width: 270px;
+        height: 180px;
+        display: grid;
+        gap: 10px;
+        > div {
+          width: 100%;
+          background: #adb274;
+        }
+        div:nth-of-type(1) {
+          height: 40px;
+        }
+        div:nth-of-type(2),
+        div:nth-of-type(3) {
+          height: 60px;
+        }
+      }
+      .bottom,
+      .top {
+        height: 20px;
+        background: #adb274;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+      }
+      .top {
+        justify-content: space-between;
+        div {
+          width: 20px;
+          height: 20px;
+          background: #555a2a;
+        }
+      }
+      .bottom {
+        justify-content: center;
+        display: flex;
+        gap: 10px;
+        div {
+          width: 20px;
+          height: 20px;
+          background: #555a2a;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <div></div>
+        <div></div>
+      </div>
+      <div class="center">
+        <div class="left"></div>
+        <div class="right">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </body>
+</html>
