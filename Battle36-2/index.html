@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        width: 100vw;
+      }
+      body,
+      .container {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        background: #f8b140;
+      }
+      .section {
+        width: 80px;
+        height: 220px;
+        display: grid;
+        place-content: center;
+        overflow: hidden;
+        div {
+          /* width: 30px;
+             height: 30px;
+             border-radius: 100%;
+             background: #CF6939;
+             border: 30px solid #F8B140;
+             box-shadow: 0 0 0 30px #2F434E, 0 0 0 60px #CF6939; */
+
+          width: 210px;
+          aspect-ratio: 1;
+          border-radius: 100%;
+          box-shadow:
+            inset 0 0 0 30px #cf6939,
+            inset 0 0 0 60px #2f434e,
+            inset 0 0 0 90px #f8b140,
+            inset 0 0 0 120px #cf6939;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="section"><div></div></div>
+      <div class="section"><div></div></div>
+      <div class="section"><div></div></div>
+    </div>
+  </body>
+</html>
