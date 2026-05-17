@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        background: #5dbcf9;
+      }
+      .top {
+        margin-block: 30px 20px;
+        width: 100px;
+        aspect-ratio: 1;
+        border-radius: 100% 100% 0 0;
+        position: relative;
+
+        &::after {
+          position: absolute;
+          content: '';
+          width: 20px;
+          height: 100px;
+          background: #5dbcf9;
+          left: 40px;
+        }
+      }
+      .b-top {
+        width: 100px;
+        height: 20px;
+      }
+      .b-middle {
+        width: 140px;
+        height: 40px;
+      }
+      .b-bottom {
+        width: 180px;
+        height: 60px;
+      }
+      div {
+        margin-inline: auto;
+        background: #21658a;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top"></div>
+    <div class="b-top"></div>
+    <div class="b-middle"></div>
+    <div class="b-bottom"></div>
+  </body>
+</html>
